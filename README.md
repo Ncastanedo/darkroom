@@ -10,7 +10,7 @@ In this project, we aim to enhance the functionality of the NFT Darkroom Marketp
 
 **Clone the Repository and install Dependencies:**
 
-   git clone https://github.com/YOUR_USERNAME/DARKROOM-NFT.git
+   git clone https://github.com/Ncastanedo/DARKROOM-NFT.git  *Note: An access token is needed
    
    cd DARKROOM-NFT
    
