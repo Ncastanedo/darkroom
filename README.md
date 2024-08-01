@@ -51,7 +51,7 @@ I am creating an new wallet using Metamask to test the updates in my local brows
    yarn dev
    ```
 
-**Connect MetaMask to Your Application:**
+**Connect MetaMask to the Application:**
    - Open the browser and navigate to `http://localhost:3000`.
    - Click on the "Connect Wallet" button and connect the MetaMask wallet.
 
