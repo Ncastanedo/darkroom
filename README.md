@@ -4,58 +4,58 @@
 This repository includes the modifications made to the DARKROOM-NFT project.
 
 # Instructions for Wallet Integration
+In this project, we aim to enhance the functionality of the NFT Darkroom Marketplace by replacing the static wallet address displayed on the connect button with the actual wallet address of the user after they connect their wallet. This will improve the user experience by providing real-time feedback on their connected wallet status. The integration involves setting up MetaMask for wallet connections, configuring the DAppProvider using `@usedapp/core`, and modifying the header component to dynamically display the connected wallet address. The process is tested using VS Code and a local environment.
 
 ## Step 1: Clone the Repository and Set Up the Project
 
-1. **Clone the Repository:**
+**Clone the Repository:**
    ```bash
    git clone https://github.com/YOUR_USERNAME/DARKROOM-NFT.git
    cd DARKROOM-NFT
    ```
 
-2. **Install Dependencies:**
+**Install Dependencies:**
    ```bash
    yarn install
    ```
 
-## Step 2: Configure DAppProvider
+## Step 2: Sep up an Ethereum environment to test
+First of all, I am setting up a new Infura project to connect to Ethereum. This step is optional. You also could display a Truffle environment or so.
 
-1. **Create an Infura Project:**
-   - Go to [Infura](https://infura.io/).
-   - Sign up and create a new project.
-   - Select "Ethereum" as the network type.
-   - Copy the Project ID from your Infura project.
+**Create an Infura Project:**
+   - [Infura](https://infura.io/).
+   - Select "Ethereum" as the network type within your project and copy the Project ID.
 
-2. **Open `client/src/index.js`:**
-   - Modify the file to include `DAppProvider` from `@usedapp/core` and configure it with your Infura Project ID.
+## Step 3: Modify DAppProvider
 
-## Step 3: Modify the Header Component
+**Modify `client/src/index.js`:**
+   - Modify the file to include `DAppProvider` from `@usedapp/core` and configure it with the Infura Project ID.
 
-1. **Open `client/src/components/Header.js`:**
+## Step 4: Modify the Header Component
+
+**Modify `client/src/components/Header.js`:**
    - Update the component to handle wallet connection and display the connected address.
 
-## Step 4: Set Up MetaMask
+## Step 5: Set Up MetaMask or another wallet
+I am creating an new wallet using Metamask to test the updates in my local browser. You could use any other wallet provider or even a physical wallet.
 
-1. **Install MetaMask:**
+**Install MetaMask:**
    - Go to [MetaMask](https://metamask.io/) and install the browser extension.
-   - Follow the instructions to set up a new wallet.
+   - Follow the instructions to set up a new wallet. Now it is not necessary to check the recovery phrase but very very recommended
 
-2. **Connect MetaMask to Your Application:**
-   - Open your browser and navigate to `http://localhost:3000`.
-   - Click on the "Connect Wallet" button and connect your MetaMask wallet.
 
-## Step 5: Run the Application
+## Step 6: Run the Application
 
-1. **Start the Development Server:**
+**Start the Development Server:**
    ```bash
    yarn dev
    ```
 
-2. **Verify Wallet Connection:**
-   - Ensure the button displays the connected wallet address after connecting MetaMask.
+**Connect MetaMask to Your Application:**
+   - Open the browser and navigate to `http://localhost:3000`.
+   - Click on the "Connect Wallet" button and connect the MetaMask wallet.
 
-## Notes
+**Verify Wallet Connection:**
+   - Ensure the button displays the connected wallet address after connecting MetaMask. It does! 😄
 
-- Ensure MetaMask is installed in your browser.
-- The Infura project ID is required for connecting to the Ethereum network.
 
