@@ -11,7 +11,9 @@ In this project, we aim to enhance the functionality of the NFT Darkroom Marketp
 **Clone the Repository and install Dependencies:**
 
    git clone https://github.com/YOUR_USERNAME/DARKROOM-NFT.git
+   
    cd DARKROOM-NFT
+   
    yarn install
    
 
