@@ -13,7 +13,7 @@ import NFTDetail from './pages/NFTDetail';
 const config = {
   readOnlyChainId: Mainnet.chainId,
   readOnlyUrls: {
-    [Mainnet.chainId]: 'https://mainnet.infura.io/v3/YOUR_INFURA_PROJECT_ID'
+    [Mainnet.chainId]: 'https://mainnet.infura.io/v3/9a7090ef3f214b8f8d0b0c74b1c73201'
   },
 };
 
