@@ -8,16 +8,12 @@ In this project, we aim to enhance the functionality of the NFT Darkroom Marketp
 
 ## Step 1: Clone the Repository and Set Up the Project
 
-**Clone the Repository:**
-   ```bash
+**Clone the Repository and install Dependencies:**
+
    git clone https://github.com/YOUR_USERNAME/DARKROOM-NFT.git
    cd DARKROOM-NFT
-   ```
-
-**Install Dependencies:**
-   ```bash
    yarn install
-   ```
+   
 
 ## Step 2: Sep up an Ethereum environment to test
 First of all, I am setting up a new Infura project to connect to Ethereum. This step is optional. You also could display a Truffle environment or so.
@@ -27,14 +23,16 @@ First of all, I am setting up a new Infura project to connect to Ethereum. This 
    - Select "Ethereum" as the network type within your project and copy the Project ID.
 
 ## Step 3: Modify DAppProvider
+This component handles the connection with the blockchain. I am changing it to fit my Infura project.
 
 **Modify `client/src/index.js`:**
-   - Modify the file to include `DAppProvider` from `@usedapp/core` and configure it with the Infura Project ID.
+   - Modify the file to include `DAppProvider` from `@usedapp/core` and configure it with the Infura Project ID. Please, check the modified archive above.
 
 ## Step 4: Modify the Header Component
+In this component is allocated the static address. I am changing it to handle the wallet address.
 
 **Modify `client/src/components/Header.js`:**
-   - Update the component to handle wallet connection and display the connected address.
+   - Update the component to handle wallet connection and display the connected address. Please, check the modified archive above.
 
 ## Step 5: Set Up MetaMask or another wallet
 I am creating an new wallet using Metamask to test the updates in my local browser. You could use any other wallet provider or even a physical wallet.
@@ -47,12 +45,11 @@ I am creating an new wallet using Metamask to test the updates in my local brows
 ## Step 6: Run the Application
 
 **Start the Development Server:**
-   ```bash
+
    yarn dev
-   ```
 
 **Connect MetaMask to the Application:**
-   - Open the browser and navigate to `http://localhost:3000`.
+   - Open the browser and navigate to http://localhost:3000.
    - Click on the "Connect Wallet" button and connect the MetaMask wallet.
 
 **Verify Wallet Connection:**
