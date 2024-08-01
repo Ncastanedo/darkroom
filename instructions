@@ -1,0 +1,38 @@
+## Step 1: Clone the Repository and Set Up the Project
+
+1. **Clone the Repository:**
+
+   git clone https://github.com/YOUR_USERNAME/DARKROOM-NFT.git
+   cd DARKROOM-NFT
+
+2. **Install Dependencies:**
+  yarn install
+
+Step 2: Configure DAppProvider
+Open client/src/index.js:
+Modify the file to include DAppProvider from @usedapp/core.
+Step 3: Modify the Header Component
+Open client/src/components/Header.js:
+Update the component to handle wallet connection and display the connected address.
+Step 4: Set Up MetaMask
+Install MetaMask:
+
+Go to MetaMask and install the browser extension.
+Follow the instructions to set up a new wallet.
+Connect MetaMask to Your Application:
+
+Open your browser and navigate to http://localhost:3000.
+Click on the "Connect Wallet" button and connect your MetaMask wallet.
+
+Step 5: Run the Application
+Start the Development Server:
+
+bash
+Copiar código
+yarn dev
+Verify Wallet Connection:
+
+Ensure the button displays the connected wallet address after connecting MetaMask.
+Notes
+Ensure MetaMask is installed in your browser.
+The Infura project ID is required for connecting to the Ethereum network.
