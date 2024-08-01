@@ -59,6 +59,3 @@ This repository includes the modifications made to the DARKROOM-NFT project.
 - Ensure MetaMask is installed in your browser.
 - The Infura project ID is required for connecting to the Ethereum network.
 
-## License
-This project is licensed under the MIT License.
-```
